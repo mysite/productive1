@@ -1,0 +1,57 @@
+{% extends "polls/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Header -->
+<header id="header">
+  <h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
+  <nav id="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>
+        <a href="#" class="icon solid fa-angle-down">Über uns</a>
+        <ul>
+          <li><a href="/joelette/">Die Joelette</a></li>
+          <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
+          <li><a href="/ueber_uns">Die Gründer</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="/contact/" class="button">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body class="is-preload">
+<div id="page-wrapper">
+
+<!-- Main -->
+<section id="main" class="container medium">
+  <header>
+    <h2>DSGVO</h2>
+  </header>
+  <h1>Datenschutzvereinbarungen</h1>
+  <p><p>In dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung Ihrer personenbezogenen Daten.</p>
+  <p> Sofern Sie Ihre Datenschutzeinstellungen ändern möchten (Einwilligungen erteilen oder bereits erteilte Einwilligungen widerrufen), klicken Sie <a target="_blank" href="#" class="sp-dsgvo-show-privacy-popup">hier</a> um Ihre Einstellungen zu ändern.</p>
+  <h2>Verantwortlich</h2>
+  <p>Felix Gatzka, InForm Personaltraining, Tölzer Str. 11a, 83703 Gmund am Tegernsee, DE, <a href= "mailto:inforollingadventure@gmail.com">inforollingadventure@gmail.com</a>, 08022 9269562</p>
+  <h2>Widerspruchsrecht</h2>
+  <p><p>Sofern die Verarbeitung Ihrer personenbezogenen Daten auf Grundlage des berechtigten Interesses erfolgt, haben Sie das Recht gegen dieser Verarbeitung zu widersprechen.</p>
+  <p>Sofern keine zwingenden schutzwürdigen Gründe für die Verarbeitung unsererseits vorliegen, wird die Verarbeitung Ihrer Daten auf Basis dieser Rechtsgrundlage eingestellt.</p>
+  <p>Zudem haben Sie das Recht, der Verarbeitung Ihrer personenbezogenen Daten zum Zweck der Direktwerbung zu widersprechen. Im Fall des Widerspruchs werden Ihre personenbezogenen Daten nicht mehr zum Zweck der Direktwerbung verarbeitet.</p>
+  <p>Die Rechtmäßigkeit der bis zum Widerspruch verarbeiteten Daten wird durch den Widerspruch nicht berührt.</p>
+  </p>
+  <h2>Widerrufsrecht</h2>
+  <p><p>Sie haben das Recht eine bereits erteilte Einwilligung jederzeit zu widerrufen, indem Sie die <a target="_blank" class="lwb-ppsp" href="#" title="Datenschutzeinstellungen">Datenschutzeinstellungen</a> ändern.</p>
+  <p>Im Fall der Einwilligung in den Erhalt elektronischer Werbung kann der Widerruf Ihrer Einwilligung durch Klick auf den Abmeldelink erfolgen. In diesem Fall wird eine Verarbeitung, sofern keine andere Rechtsgrundlage besteht, eingestellt.</p>
+  <p>Die Rechtmäßigkeit der bis zum Widerruf verarbeiteten Daten wird durch den Widerruf nicht berührt.</p>
+  </p>
+  <h2>Betroffenenrechte</h2>
+  <p><p>Sie haben zudem das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung der personenbezogenen Daten.</p>
+  <p>Soweit die Rechtsgrundlage der Verarbeitung Ihrer personenbezogenen Daten in Ihrer Einwilligung oder in einem mit Ihnen abgeschlossenen Vertrag besteht, haben Sie überdies das Recht auf Datenübertragbarkeit. </p>
+  <p>Weiters haben Sie das Recht auf Beschwerde bei der Aufsichtsbehörde. Nähere Informationen zu den Aufsichtsbehörden in der Europäischen Union finden Sie <a target="_blank" href="https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm" title="Datenschutzbehörden">hier</a>.</p></p>
+</section>
+
+{% endblock %}

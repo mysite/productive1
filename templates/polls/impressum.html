@@ -1,0 +1,46 @@
+{% extends "polls/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Header -->
+<header id="header">
+  <h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
+  <nav id="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>
+        <a href="#" class="icon solid fa-angle-down">Über uns</a>
+        <ul>
+          <li><a href="/joelette/">Die Joelette</a></li>
+          <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
+          <li><a href="/ueber_uns">Die Gründer</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="/contact/" class="button">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body class="is-preload">
+<div id="page-wrapper">
+
+<!-- Main -->
+<section id="main" class="container medium">
+	<header>
+		<h2>Impressum</h2>
+  </header>
+    InForm Personaltraining
+    <br>Inhaber des Unternehmens: Felix Gatzka
+    <br>Tölzer Str. 11a
+    <br>83703 Gmund am Tegernsee
+    <br>Deutschland
+    <br>Email: inforollingadventure@gmail.com
+    <br>Telefon: 08022 9269562
+    <br>Verantwortlich für Inhalt: Felix Gatzka
+    <br>Plattform der Europäischen Kommission zur Online-Streitbeilegung (OS) für Verbraucher: https://ec.europa.eu/consumers/odr/. Wir sind nicht bereit und nicht verpflichtet an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+</section>
+
+{% endblock %}

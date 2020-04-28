@@ -1,0 +1,61 @@
+{% extends "polls/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Header -->
+<header id="header">
+<h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
+<nav id="nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li>
+      <a href="#" class="icon solid fa-angle-down">Über uns</a>
+      <ul>
+        <li><a href="/joelette/">Die Joelette</a></li>
+        <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
+        <li><a href="/ueber_uns">Die Gründer</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="/contact/" class="button">Kontakt</a></li>
+  </ul>
+</nav>
+</header>
+
+<body class="is-preload">
+<div id="page-wrapper">
+
+<!-- Main -->
+<section id="main" class="container medium">
+	<header>
+		<h2>Kontaktiere uns</h2>
+		<p>Wir freuen uns von Dir zu hören.</p>
+	</header>
+	<div class="box">
+		<form method="post" action="">
+			{% csrf_token %}
+			<div class="row gtr-50 gtr-uniform">
+				<div class="col-6 col-12-mobilep">
+					<input type="text" name="name" id="name" value="" placeholder="Name" />
+				</div>
+				<div class="col-6 col-12-mobilep">
+					<input type="email" name="email" id="email" value="" placeholder="Email" />
+				</div>
+				<div class="col-12">
+					<input type="text" name="subject" id="subject" value="" placeholder="Betreff" />
+				</div>
+				<div class="col-12">
+					<textarea name="text" id="text" placeholder="Nachricht" rows="6"></textarea>
+				</div>
+				<div class="col-12">
+					<ul class="actions special">
+						<li><input type="submit" value="Senden" /></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+{% endblock %}

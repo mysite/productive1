@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<!--
+  Alpha by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78954921-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-78954921-2');
+</script>
+
+{% load static %}
+
+<html>
+  <head>
+    <title>Rolling Adventure</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'assets_2/css/main_3.css' %}" />
+  </head>
+
+      {% block content %}
+      {% endblock %}
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://www.facebook.com/Rolling-Adventure-103263077989490/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/_rolling_adventure_/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; PT InForm. All rights reserved.</li>
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/dsgvo/">DSGVO</a></li>
+          <li>Design: <a href="http://html5up.net" target="blank">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+
+  <!-- Scripts -->
+  <script src="{% static 'assets_2/js/jquery.min.js' %}"></script>
+  <script src="{% static 'assets_2/js/jquery.dropotron.min.js' %}"></script>
+  <script src="{% static 'assets_2/js/jquery.scrollex.min.js' %}"></script>
+  <script src="{% static 'assets_2/js/browser.min.js' %}"></script>
+  <script src="{% static 'assets_2/js/breakpoints.min.js' %}"></script>
+  <script src="{% static 'assets_2/js/util.js' %}"></script>
+  <script src="{% static 'assets_2/js/main.js' %}"></script>
+
+</html>

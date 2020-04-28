@@ -1,0 +1,163 @@
+{% extends "polls/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<body class="landing is-preload">
+<div id="page-wrapper">
+  <!-- Header -->
+  <header id="header" class="alt">
+    <h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
+    <nav id="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="#" class="icon solid fa-angle-down">Über uns</a>
+          <ul>
+            <li><a href="/joelette/">Die Joelette</a></li>
+            <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
+            <li><a href="/ueber_uns">Die Gründer</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="/contact/" class="button">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Banner -->
+  <section id="banner">
+    <h2>Rolling Adventure</h2>
+    <p>Das Leben erleben – möglich für jeden </p>
+    <ul class="actions special">
+      <li><a href="/contact/" class="button primary">Miete die Joelette</a></li>
+      <!--<li><a href="#" class="button">Learn More</a></li>-->
+    </ul>
+  </section>
+
+  <!-- Main -->
+  <section id="main" class="container">
+    <section class="box special">
+      <header class="major">
+        <h4>Es gibt sie noch: Echte Abenteuer. Erfahrungen die das Leben interessant und lebenswert machen. Erlebnisse, die dich die Magie der Natur spüren lassen. Wagnisse die dich dem wichtigsten Teil deines Lebens näher bringen – dir selbst. Momente, die dich frei fühlen lassen, selbst wenn du dich oft in deinem Körper gefangen gefühlt hast und das für dich bisher unmöglich schien. Klingt zu schön um wahr zu sein? Nicht für uns.
+        <!--<p></p>-->
+        </h4>
+      </header>
+      <span class="image featured"><img src="{% static 'assets_2/images/MarkusFruehmann_Sari_Dolorama-238-2.jpg' %}" alt="">
+      </span>
+    </section>
+
+    <section class="box special features">  
+    <!--<section id="cta">-->
+      <header>
+      <h2>4 Gründe die <a href="/joelette/">Joellete</a> zu mieten</h2>
+      <!--<p>A generic page for every non-generic situation.</p>-->
+      </header>
+
+      <div class="features-row">
+        <section>
+          <span class="icon solid major fa-bolt accent2"></span>
+          <h3>Abenteuer als Therapie</h3>
+          <!--<p>Das gemeinsame Erleben wiederum stabilisiert das soziale Wohlbefinden und stärkt dann natürlich noch unsere psychische Gesundheit.</p>-->
+        </section>
+        <section>
+          <span class="icon solid major fa-chart-area accent3"></span>
+          <h3>Freiheit beginnt im Kopf </h3>
+          <!--<p></p>-->
+        </section>
+      </div>
+
+      <div class="features-row">
+        <section>
+          <span class="icon solid major fa-cloud accent4"></span>
+          <h3>Geschichten für ein ganzes Leben</h3>
+          <!--<p></p>-->
+        </section>
+        <section>
+          <span class="icon solid major fa-lock accent5"></span>
+          <h3>Alltag mit Freunden und Familie</h3>
+          <!--<p></p>-->
+        </section>
+      </div>
+    </section>
+  
+    <!--div class="row">
+      <div class="col-6 col-12-narrower">
+
+        <section class="box special">
+          <span class="image featured"><img src="{% static 'assets_2/images/MarkusFruehmann_Sari_Dolorama-103.jpg' %}" alt="" /></span>
+          <h3>Tagesausflug am Tegernsee<br></br></h3>
+          <p></p>
+          <ul class="actions special">
+            <li><a href="#" class="button alt">Mehr</a></li>
+          </ul>
+        </section>
+
+      </div>
+      <div class="col-6 col-12-narrower">
+
+        <section class="box special">
+          <span class="image featured"><img src="{% static 'assets_2/images/MarkusFruehmann_Sari_Dolorama-194.jpg' %}" alt="" /></span>
+          <h3>4-tägige Wanderung durch die Dolomiten</h3>
+          <p></p>
+          <ul class="actions special">
+            <li><a href="#" class="button alt">Mehr</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>-->
+
+    <section class = "box">
+      <header>
+      <h2>Die 4 Gründe</h2>
+      <!--<p>A generic page for every non-generic situation.</p>-->
+      </header>
+      <div class="features-row">
+        <hr/>
+        <p><h3>Abenteuer als Therapie</h3></p>
+        <p>Gesundheit ist als das Produkt von 3 wichtigen Größen zu verstehen: Psychische Gesundheit, Körperliche Gesundheit und soziale Gesundheit.</p>
+        <p>So können wir uns krank fühlen, wenn wir körperlich fit, aber psychisch labil und sozial ausgegrenzt sind. Oder aber ganz genau im Gegenteil: wir können uns gesund fühlen, wenn wir sozial integriert und psychisch fit sind.</p>
+        <p>Abenteuer mit den Freunden können die geistige Gesundheit fördern da unser Denkorgan auf eine positive Art und Weise stimuliert wird – schon bei der Planung, werden viele Glückshormone ausgeschüttet. Das gemeinsame Erleben wiederum stabilisiert das soziale Wohlbefinden und stärkt dann natürlich noch unsere psychische Gesundheit.</p>
+        <p>Andere Schwimmen mit Delfinen, wir erleben die Berge.</p>
+        
+        <hr/>
+        <p><h2>Freiheit beginnt im Kopf </h2></p>
+        <p>Gehbehinderungen oder Krankheiten auch das Alter können dich in deiner Mobilität einschränken, sollen deinen Körper aber nicht zum Gefängnis werden lassen. Die eigenen vier Wände bieten dir Sicherheit, werden aber schnell zu einer Zelle.</p>
+        <p>Egal ob du mit deinen Freunden einen Tag, oder mehrere Tage unterwegs bist. Egal ob ihr in die Berge gehen oder die Landschaft zwischen den Wäldern und Feldern genießen wollt. Die kleineren und größeren Abenteuer helfen dir, deinem geistigen Gefängnis zu entfliehen und die Natur, das Leben und die Freiheit zu spüren. Mit der Joellete ist kein Weg zu weit, kein Weg unpassierbar, kein Berg zu hoch.</p>
+        
+        <hr/>
+        <p><h2>Geschichten für ein ganzes Leben </h2></p>
+        <p>Erinnerst du dich noch an den Film, den du vor 3 Jahren angeschaut hast. Nein? Erinnerst du dich an deinen Urlaub vor 5 Jahren?</p>
+        <p>Wir sind, was wir erleben. Erlebnisse, ob alltägliche oder ganz besondere prägen unser ganzes Leben. Gemeinsame Höhepunkte verbindet Freunde mehr und schweißen die Freundschaft noch fester zusammen, egal wie gut sie sich schon kennen. Erinnerung an die Erlebnisse muntern in schweren Zeiten auf und sorgen auch Jahre später noch für Gesprächsstoff und herzhafte Lacher.</p>
+        
+        <hr/>
+        <p><h2>Alltag mit Freunden und Familie </h2></p>
+        <p>Soziale Isolierung oder Segregation können bei Aufkommen einer Krankheit oder Behinderung schnell negative psychische Auswirkungen haben. Es ist daher so wichtig, dass Menschen mit eingeschränkter Mobilität genauso Teil des Alltags sind, wie körperlich gesunde Menschen.</p>
+        <p>Gerade in einem naturverbundenen Familien- und Freundeskreis ist es oft schwer, eingeschränkte Personen in den Lebensalltag zu integrieren. Herkömmliche Rollstühle stoßen schon bei einfachen Forststraßen an ihre Grenzen. Mit der Joellete ist das vorbei: Egal ob Feldweg, Forstweg, Wanderweg oder Trail – oder doch lieber querfeldein? – mit der Joellete gibt es kaum noch ein Hindernis, das nicht überwunden werden könnte. So steht auch einem Familienausflug und/ oder ein Ausflug mit den Freunden in die Natur nichts mehr im Weg. Gemeinsam verbrachte Zeit, ist doch die schönste Zeit.</p>
+      </div>
+    </section>
+  </section>
+</div>
+
+<!-- CTA -->
+<div id="page-wrapper">
+  <section id="cta">
+    <h2>Melde dich an, um nähere Information zu erhalten</h2>
+    <p>Wir freuen uns, von dir zu hören.</p>
+    <form>
+      <a href="/contact/" class="button">Kontakt</a>
+      <!--<div class="row gtr-50 gtr-uniform">
+        <div class="col-8 col-12-mobilep">
+          <input type="email" name="email" id="email" placeholder="Email Addresse" />
+        </div>
+        
+        <div class="col-4 col-12-mobilep">
+          <input type="submit" value="Anmelden" class="fit" />
+        </div>
+      </div>-->
+    </form>
+  </section>
+
+{% endblock %}
