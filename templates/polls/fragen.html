@@ -1,0 +1,103 @@
+{% extends "polls/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Header -->
+<header id="header">
+<h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
+<nav id="nav">
+  <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="#" class="icon solid fa-angle-down">Über uns</a>
+          <ul>
+            <li><a href="/joelette/">Die Joelette</a></li>
+            <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
+            <li><a href="/ueber_uns">Die Gründer</a></li>
+          </ul>
+        </li>
+        <li><a href="/blog/">Blog</a></li>
+	    <li><a href="/contact/">Kontakt</a></li>
+        <li><a href="/contact/" class="button">Joelette mieten</a></li>
+      </ul>
+</nav>
+</header>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>Häufige Fragen</h2>
+				<!--<p>A generic page for every non-generic situation.</p>-->
+			</header>
+			
+			<div class="features-row">
+		    	<hr/>
+		        <p><h3>Frage 1: Was kostet es, die Joelette auszuleihen?</h3></p>
+		        <p>Wir haben das Motto "Zahle soviel du kannst".</p>		        
+		        <hr/>
+
+		        <hr/>
+		        <p><h3>Frage 2: Wie kann ich die Joelette ausleihen?</h3></p>
+		        <p>Hinterlasse uns eine Nachricht und wir vereinbaren die Übergabe direkt.</p>		        
+		        <hr/>
+		    </div>
+		    <hr/>
+			<div class="row">
+				<div class="col-6 col-12-narrower">
+					<section class="box special">
+						<span class="image featured">
+							<img src="{% static 'assets/images/MarkusFruehmann_Sari_Dolorama-103.jpg' %}" alt="" />
+						</span>
+						<h3><a href="/gruende/">Die 4 Gründe die Joelette zu mieten</a></h3>
+						<p></p>
+						<!--<ul class="actions special">
+						<li><a href="#" class="button alt">Mehr</a></li>-->
+						</ul>
+					</section>
+				</div>
+
+				<div class="col-6 col-12-narrower">
+					<section class="box special">
+						<span class="image featured"><img src="{% static 'assets/images/MarkusFruehmann_Sari_Dolorama-194.jpg' %}" alt="" /></span>
+					  	<h3><a href="/joelette/">Was ist die Joelette?</a><br></br></h3>
+					  	<p></p>
+						<!--<ul class="actions special">
+						<	li><a href="#" class="button alt">Mehr</a></li>
+						</ul>-->
+					</section>
+				</div>
+			</div>
+
+		    <div class="row">
+				<div class="col-6 col-12-narrower">
+					<section class="box special">
+						<span class="image featured"><img src="{% static 'assets/images/MarkusFruehmann_Sari_Dolorama-68.jpg' %}" alt="" /></span>
+					  	<h3><a href="/blog/">Unsere Abenteuer</a></h3>
+					  	<p></p>
+						<!--<ul class="actions special">
+						<li><a href="#" class="button alt">Mehr</a></li>
+						</ul>-->
+					</section>
+				</div>
+
+				<div class="col-6 col-12-narrower">
+					<section class="box special">
+						<span class="image featured">
+							<img src="{% static 'assets/images/MarkusFruehmann_Sari_Dolorama-17.jpg' %}" alt="" />
+						</span>
+						<h3><a href="#">Häufige Fragen</a></h3>
+						<p></p>
+						<!--<ul class="actions special">
+						<li><a href="#" class="button alt">Mehr</a></li>
+						</ul>-->
+					</section>
+				</div>
+		    </div>
+		</section>
+
+{% endblock %}

@@ -9,6 +9,21 @@
   <h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
   <nav id="nav">
     <ul>
+<<<<<<< HEAD
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="#" class="icon solid fa-angle-down">Über uns</a>
+          <ul>
+            <li><a href="/joelette/">Die Joelette</a></li>
+            <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
+            <li><a href="/ueber_uns">Die Gründer</a></li>
+          </ul>
+        </li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Kontakt</a></li>
+        <li><a href="/contact/" class="button">Joelette mieten</a></li>
+      </ul>
+=======
       <li><a href="/">Home</a></li>
       <li>
         <a href="#" class="icon solid fa-angle-down">Über uns</a>
@@ -21,6 +36,7 @@
       <li><a href="/blog">Blog</a></li>
       <li><a href="/contact/" class="button">Kontakt</a></li>
     </ul>
+>>>>>>> 077e043e98c2e6964d96bb90fe3f0e59a5e4307f
   </nav>
 </header>
 
@@ -30,6 +46,29 @@
 <!-- Main -->
 <section id="main" class="container medium">
   <header>
+<<<<<<< HEAD
+    <h2>Blogeinträge</h2>
+  </header>
+ 
+
+   <div class="row">
+      {% if entry %}
+      {% for entry in entry %} 
+      <div class="col-6 col-12-narrower">
+        <section class="box special">
+          <span class="image featured">
+            <img src="/pictures/{{entry.image}}" alt=""/>
+            <!--<img src="{% static 'assets/images/MarkusFruehmann_Sari_Dolorama-103.jpg' %}" alt=""/>
+            <img src="pictures/{{entry.image}}" alt="" />-->
+          </span>
+          <h3><a href="/blog/{{entry.id}}/">{{entry.title}}</a></h3>
+          <p></p>
+          <!--<ul class="actions special">
+            <li><a href="#" class="button alt">Mehr</a></li>
+          </ul>-->
+        </section>
+      </div>
+=======
     <h2>TEST</h2>
   </header>
   <ul>
@@ -37,16 +76,21 @@
       {% if entry %}
       {% for entry in entry %}  
         <li>{{entry.title}}:{{entry.summary}}</li>
+>>>>>>> 077e043e98c2e6964d96bb90fe3f0e59a5e4307f
       {% endfor %}
       {% else %}
         <p>No entry available</p>
       {% endif %}
+<<<<<<< HEAD
+  </div>
+=======
 
    </ul>
 
 
 
 
+>>>>>>> 077e043e98c2e6964d96bb90fe3f0e59a5e4307f
 
 </section>
 

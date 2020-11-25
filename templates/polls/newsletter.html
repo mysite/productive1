@@ -9,7 +9,6 @@
 <h1><a href="/">Rolling Adventure</a> by PT InForm</h1>
 <nav id="nav">
   <ul>
-<<<<<<< HEAD
         <li><a href="/">Home</a></li>
         <li>
           <a href="#" class="icon solid fa-angle-down">Über uns</a>
@@ -23,20 +22,6 @@
 	      <li><a href="/contact/">Kontakt</a></li>
         <li><a href="/contact/" class="button">Joelette mieten</a></li>
       </ul>
-=======
-    <li><a href="/">Home</a></li>
-    <li>
-      <a href="#" class="icon solid fa-angle-down">Über uns</a>
-      <ul>
-        <li><a href="/joelette/">Die Joelette</a></li>
-        <li><a href="/ueber_uns/">Unsere Geschichte</a></li>
-        <li><a href="/ueber_uns">Die Gründer</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="/contact/" class="button">Kontakt</a></li>
-  </ul>
->>>>>>> 077e043e98c2e6964d96bb90fe3f0e59a5e4307f
 </nav>
 </header>
 
@@ -53,17 +38,8 @@
 		<form method="post" action="">
 			{% csrf_token %}
 			<div class="row gtr-50 gtr-uniform">
-				<div class="col-6 col-12-mobilep">
-					<input type="text" name="name" id="name" value="" placeholder="Name" />
-				</div>
-				<div class="col-6 col-12-mobilep">
+				<div class="col-12">
 					<input type="email" name="email" id="email" value="" placeholder="Email" />
-				</div>
-				<div class="col-12">
-					<input type="text" name="subject" id="subject" value="" placeholder="Betreff" />
-				</div>
-				<div class="col-12">
-					<textarea name="text" id="text" placeholder="Nachricht" rows="6"></textarea>
 				</div>
 				<div class="col-12">
 					<ul class="actions special">
