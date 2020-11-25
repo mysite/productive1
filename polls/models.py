@@ -8,7 +8,6 @@ class Contact(models.Model):
     subject = models.CharField(max_length=50)
     text = models.CharField(max_length=350)
 
-<<<<<<< HEAD
     #class Admin:
     #    list_display = (
     #        'name',
@@ -24,13 +23,4 @@ class Newsletter(models.Model):
     #    list_display = (
     #        'email',
     #    )
-=======
-    class Admin:
-        list_display = (
-            'name',
-            'email',
-            'subject',
-            'Text'
-        )
->>>>>>> 077e043e98c2e6964d96bb90fe3f0e59a5e4307f
     
